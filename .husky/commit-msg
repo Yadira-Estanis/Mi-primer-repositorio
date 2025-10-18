@@ -1,0 +1,3 @@
+mkdir -p .husky
+printf '#!/usr/bin/env sh\nnpx --no-install commitlint --edit "$1"\n' > .husky/commit-msg
+chmod +x .husky/commit-msg
